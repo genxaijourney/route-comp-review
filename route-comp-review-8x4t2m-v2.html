@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Route Sales Representative — Compensation Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+--paper:  #E6EDF1;
+--ink:    #17262E;
+--stamp:  #A6332A;
+--ledger: #1F5C48;
+--rule:   #17262E33;
+--rule-solid: #17262E;
+--dim:    #17262E99;
+--panel:  #F3F6F8;
+--wash:   #FBEEEC;
+}
+* { box-sizing: border-box; }
+html, body {
+margin: 0;
+padding: 0;
+background: var(--paper);
+color: var(--ink);
+font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+}
+body {
+background-image:
+repeating-linear-gradient(0deg, transparent 0, transparent 39px, rgba(23,38,46,0.05) 39px, rgba(23,38,46,0.05) 40px);
+}
+.page {
+max-width: 780px;
+margin: 0 auto;
+padding: 32px 28px 64px;
+}
+header.doc-head {
+border-top: 3px double var(--rule-solid);
+border-bottom: 3px double var(--rule-solid);
+padding: 18px 0 16px;
+margin-bottom: 28px;
+}
+.kicker {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 11px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: var(--dim);
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 8px;
+margin-bottom: 10px;
+}
+h1 {
+font-family: 'Archivo', sans-serif;
+font-weight: 900;
+font-size: 30px;
+line-height: 1.15;
+letter-spacing: -0.01em;
+margin: 0 0 8px;
+}
+.subhead {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 12px;
+color: var(--dim);
+letter-spacing: 0.04em;
+}
+section.rec {
+border: 1px solid var(--rule-solid);
+background: var(--panel);
+margin-bottom: 22px;
+page-break-inside: avoid;
+break-inside: avoid;
+}
+.rec-head {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+gap: 12px;
+padding: 10px 14px 8px;
+border-bottom: 1px solid var(--rule-solid);
+background: var(--paper);
+}
+.rec-num {
+font-family: 'IBM Plex Mono', monospace;
+font-weight: 600;
+font-size: 11px;
+letter-spacing: 0.14em;
+color: var(--ledger);
+text-transform: uppercase;
+}
+h2 {
+font-family: 'Archivo', sans-serif;
+font-weight: 700;
+font-size: 18px;
+margin: 0;
+letter-spacing: -0.005em;
+}
+.rec-body {
+padding: 16px 16px 18px;
+}
+p { margin: 0 0 10px; }
+p.lede {
+font-size: 15px;
+margin-bottom: 14px;
+}
+.source-line {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 11px;
+color: var(--dim);
+letter-spacing: 0.03em;
+margin: -2px 0 12px;
+text-transform: uppercase;
+}
+.fig {
+font-family: 'IBM Plex Mono', monospace;
+font-weight: 600;
+letter-spacing: -0.02em;
+color: var(--ink);
+}
+.fig-stamp { color: var(--stamp); }
+.fig-ledger { color: var(--ledger); }
+.mkt-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 0;
+border: 1px solid var(--rule-solid);
+background: var(--paper);
+margin: 4px 0 14px;
+}
+.mkt-cell {
+padding: 12px 10px;
+border-right: 1px solid var(--rule-solid);
+text-align: center;
+}
+.mkt-cell:last-child { border-right: none; }
+.mkt-cell .label {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: var(--dim);
+margin-bottom: 4px;
+}
+.mkt-cell .num {
+font-family: 'IBM Plex Mono', monospace;
+font-weight: 600;
+font-size: 20px;
+letter-spacing: -0.01em;
+color: var(--ink);
+}
+.mkt-cell.range .num { font-size: 15px; }
+.ask-ribbon {
+border: 1px solid var(--stamp);
+padding: 10px 12px;
+margin: 4px 0 14px;
+background: var(--wash);
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+gap: 12px;
+flex-wrap: wrap;
+}
+.ask-ribbon .lbl {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 11px;
+letter-spacing: 0.16em;
+text-transform: uppercase;
+color: var(--stamp);
+}
+.ask-ribbon .fig {
+font-size: 22px;
+color: var(--stamp);
+}
+.warn {
+border: 1px dashed var(--stamp);
+background: var(--wash);
+padding: 12px 14px;
+margin: 12px 0 0;
+font-size: 14px;
+}
+.warn .warn-label,
+.donot strong {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(--stamp);
+display: block;
+margin-bottom: 4px;
+font-weight: 600;
+}
+.pp-lead {
+display: grid;
+grid-template-columns: 1fr;
+gap: 8px;
+margin: 6px 0 14px;
+padding: 12px 14px;
+background: var(--paper);
+border: 1px solid var(--rule-solid);
+}
+.pp-row {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+gap: 10px;
+border-bottom: 1px dotted var(--rule);
+padding-bottom: 6px;
+}
+.pp-row:last-child { border-bottom: none; padding-bottom: 0; }
+.pp-row .k {
+font-family: 'IBM Plex Sans', sans-serif;
+font-size: 13px;
+color: var(--ink);
+}
+.pp-row .v {
+font-family: 'IBM Plex Mono', monospace;
+font-weight: 600;
+font-size: 15px;
+color: var(--ink);
+white-space: nowrap;
+text-align: right;
+}
+.pp-row .v.stamp { color: var(--stamp); }
+.pp-row .v.ledger { color: var(--ledger); }
+table.receipts {
+width: 100%;
+border-collapse: collapse;
+margin: 8px 0 4px;
+font-size: 13px;
+}
+table.receipts caption {
+text-align: left;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: var(--dim);
+margin-bottom: 6px;
+}
+table.receipts th {
+text-align: left;
+font-family: 'IBM Plex Mono', monospace;
+font-weight: 500;
+font-size: 10px;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+color: var(--dim);
+border-bottom: 1px solid var(--rule-solid);
+padding: 6px 6px 6px 0;
+}
+table.receipts td {
+padding: 8px 6px 8px 0;
+border-bottom: 1px dotted var(--rule);
+vertical-align: top;
+}
+table.receipts td.num,
+table.receipts th.num {
+text-align: right;
+font-family: 'IBM Plex Mono', monospace;
+white-space: nowrap;
+}
+table.receipts td.num { font-weight: 600; }
+table.receipts td .delta {
+color: var(--stamp);
+font-weight: 600;
+display: inline-block;
+margin-left: 6px;
+}
+table.receipts tbody tr:last-child td { border-bottom: none; }
+.ticker {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 6px 14px;
+padding: 10px 14px;
+background: var(--paper);
+border: 1px solid var(--rule-solid);
+margin-top: 12px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 12px;
+}
+.ticker div {
+display: flex;
+justify-content: space-between;
+gap: 8px;
+border-bottom: 1px dotted var(--rule);
+padding: 4px 0;
+}
+.ticker div:nth-last-child(-n+2) { border-bottom: none; }
+.math-block {
+display: grid;
+grid-template-columns: 1fr;
+gap: 6px;
+padding: 12px 14px;
+background: var(--paper);
+border: 1px solid var(--rule-solid);
+margin: 6px 0 12px;
+}
+.math-row {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+gap: 10px;
+border-bottom: 1px dotted var(--rule);
+padding: 4px 0;
+}
+.math-row:last-child { border-bottom: none; }
+.math-row .k { font-size: 13px; }
+.math-row .v {
+font-family: 'IBM Plex Mono', monospace;
+font-weight: 600;
+font-size: 14px;
+white-space: nowrap;
+}
+.math-row.total {
+border-top: 2px solid var(--rule-solid);
+padding-top: 8px;
+margin-top: 4px;
+}
+.math-row.total .v { color: var(--stamp); font-size: 16px; }
+.callout {
+font-family: 'Archivo', sans-serif;
+font-weight: 700;
+font-size: 16px;
+text-align: center;
+padding: 10px;
+border: 1px solid var(--stamp);
+background: var(--wash);
+color: var(--stamp);
+margin-top: 8px;
+}
+.cart-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+margin: 6px 0 12px;
+}
+.cart-card {
+border: 1px solid var(--rule-solid);
+background: var(--paper);
+padding: 12px 14px 10px;
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+.cart-item {
+font-family: 'IBM Plex Sans', sans-serif;
+font-weight: 600;
+font-size: 13px;
+color: var(--ink);
+line-height: 1.25;
+}
+.cart-unit {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--dim);
+margin-bottom: 4px;
+}
+.cart-row {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+gap: 8px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 13px;
+}
+.cart-row .then { color: var(--dim); }
+.cart-row .now { color: var(--ink); font-weight: 600; font-size: 15px; }
+.cart-row .arrow { color: var(--dim); }
+.cart-delta {
+font-family: 'IBM Plex Mono', monospace;
+font-weight: 600;
+font-size: 14px;
+color: var(--stamp);
+text-align: right;
+letter-spacing: -0.01em;
+padding-top: 2px;
+border-top: 1px dotted var(--rule);
+margin-top: 2px;
+}
+.obj {
+border: 1px solid var(--rule-solid);
+background: var(--paper);
+margin-bottom: 10px;
+padding: 12px 14px;
+}
+.obj-say {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: var(--stamp);
+margin-bottom: 4px;
+}
+.obj-quote {
+font-family: 'IBM Plex Sans', sans-serif;
+font-style: italic;
+font-size: 14px;
+color: var(--ink);
+margin-bottom: 10px;
+border-left: 3px solid var(--stamp);
+padding-left: 10px;
+line-height: 1.4;
+}
+.obj-reply {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: var(--ledger);
+margin-bottom: 4px;
+}
+.obj-body {
+font-size: 14px;
+line-height: 1.5;
+}
+ol.tp {
+list-style: none;
+counter-reset: tpc;
+padding: 0;
+margin: 4px 0 0;
+}
+ol.tp li {
+counter-increment: tpc;
+padding: 12px 14px 12px 46px;
+border: 1px solid var(--rule-solid);
+background: var(--paper);
+margin-bottom: 8px;
+position: relative;
+font-size: 14px;
+}
+ol.tp li::before {
+content: counter(tpc, decimal-leading-zero);
+position: absolute;
+left: 12px;
+top: 12px;
+font-family: 'IBM Plex Mono', monospace;
+font-weight: 600;
+font-size: 12px;
+letter-spacing: 0.1em;
+color: var(--ledger);
+}
+.donot {
+margin-top: 14px;
+padding: 10px 14px;
+border: 1px solid var(--stamp);
+background: var(--wash);
+font-size: 13px;
+color: var(--stamp);
+font-family: 'IBM Plex Sans', sans-serif;
+font-weight: 500;
+}
+.pitch {
+border: 1px solid var(--ledger);
+background: #EAF3EE;
+padding: 12px 14px;
+margin-top: 12px;
+font-size: 14px;
+}
+.pitch strong.label {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(--ledger);
+display: block;
+margin-bottom: 6px;
+font-weight: 600;
+}
+.pitch em { font-style: italic; color: var(--ink); }
+footer.sources {
+border-top: 3px double var(--rule-solid);
+padding-top: 14px;
+margin-top: 8px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 11px;
+color: var(--dim);
+line-height: 1.6;
+}
+footer.sources .lbl {
+font-weight: 600;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+color: var(--ink);
+display: block;
+margin-bottom: 6px;
+}
+footer.stamp-line {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+flex-wrap: wrap;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(--dim);
+margin-top: 16px;
+border-top: 1px solid var(--rule-solid);
+padding-top: 8px;
+}
+@media (max-width: 560px) {
+.page { padding: 22px 16px 48px; }
+h1 { font-size: 24px; }
+h2 { font-size: 16px; }
+.kicker { font-size: 10px; }
+.mkt-grid { grid-template-columns: 1fr; }
+.mkt-cell { border-right: none; border-bottom: 1px solid var(--rule-solid); }
+.mkt-cell:last-child { border-bottom: none; }
+.mkt-cell .num { font-size: 22px; }
+.mkt-cell.range .num { font-size: 17px; }
+table.receipts { font-size: 12px; }
+.ticker { grid-template-columns: 1fr; }
+.ticker div:nth-last-child(-n+2) { border-bottom: 1px dotted var(--rule); }
+.ticker div:last-child { border-bottom: none; }
+.ask-ribbon .fig { font-size: 20px; }
+.cart-grid { grid-template-columns: 1fr; }
+}
+@media print {
+html, body { background: #fff !important; }
+body { background-image: none !important; font-size: 11pt; }
+.page { max-width: 100%; padding: 0.5in 0.5in 0.6in; }
+section.rec { border-color: #000; }
+.rec-head { background: #fff; border-color: #000; }
+.pp-lead, .mkt-grid, .math-block, .ticker, ol.tp li, .cart-card, .obj { background: #fff; border-color: #000; }
+.ask-ribbon, .warn, .callout, .donot, .pitch { background: #fff; }
+a { color: inherit; text-decoration: none; }
+section.rec, ol.tp li, .warn, .callout, .donot, .obj, .cart-card, .pitch { page-break-inside: avoid; }
+footer.sources { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="doc-head">
+<div class="kicker">
+<span>Doc No. 8x4t2m</span>
+<span>Compensation Review</span>
+</div>
+<h1>Route Sales Representative — Compensation Review</h1>
+<div class="subhead">Prepared for a scheduled compensation discussion. Argument built entirely on published market and macroeconomic data.</div>
+</header>
+<section class="rec">
+<div class="rec-head">
+<span class="rec-num">§ 01 &nbsp;·&nbsp; Market Rate</span>
+<h2>The Title Sets the Band</h2>
+</div>
+<div class="rec-body">
+<div class="source-line">Source · Salary.com, 2026 · "Route Sales Representative"</div>
+<div class="mkt-grid" role="table" aria-label="Market rate for Route Sales Representative">
+<div class="mkt-cell"><div class="label">Median</div><div class="num fig">$58,471</div></div>
+<div class="mkt-cell"><div class="label">Average</div><div class="num fig">$59,841</div></div>
+<div class="mkt-cell range"><div class="label">Range</div><div class="num fig">$42,515 – $76,261</div></div>
+</div>
+<div class="ask-ribbon">
+<span class="lbl">Current → Ask</span>
+<span class="fig fig-stamp">$55,000 &nbsp;→&nbsp; $65,000</span>
+</div>
+<p class="lede">Current pay of <span class="fig">$55,000</span> sits <strong>below the published median</strong> for the title. An adjustment to <span class="fig fig-stamp">$65,000</span> lands <strong>squarely mid-band</strong> for the same role — well inside the $42,515–$76,261 range Salary.com reports. This is a market-rate correction, not an outlier request.</p>
+<div class="warn">
+<span class="warn-label">Data-Source Caveat</span>
+The federal Bureau of Labor Statistics occupation code for "driver / sales workers" (SOC 53-3031) shows a median of <span class="fig">$37,130</span> (May 2024). That code <strong>bundles pizza delivery and similar delivery-driver roles</strong> in with route sales. It is not the correct comparison. The correct comparison title is <strong>"Route Sales Representative."</strong>
+</div>
+</div>
+</section>
+<section class="rec">
+<div class="rec-head">
+<span class="rec-num">§ 02 &nbsp;·&nbsp; Purchasing Power</span>
+<h2>Why the Wage Band Is Stale</h2>
+</div>
+<div class="rec-body">
+<div class="source-line">Source · U.S. Bureau of Labor Statistics · CPI-U</div>
+<div class="pp-lead">
+<div class="pp-row"><span class="k">CPI-U, July 2016</span><span class="v">240.628</span></div>
+<div class="pp-row"><span class="k">CPI-U, July 2026</span><span class="v">333.918</span></div>
+<div class="pp-row"><span class="k"><strong>Rise in the price level, 2016 → 2026</strong></span><span class="v stamp">+38.8%</span></div>
+<div class="pp-row"><span class="k">$55,000 today, expressed in 2016 dollars</span><span class="v">$39,634</span></div>
+<div class="pp-row"><span class="k">To match the buying power of $55,000 in 2016</span><span class="v stamp">$76,325 today</span></div>
+</div>
+<p class="lede">The wage that once bought a full 2016 lifestyle now buys roughly <span class="fig">$39,634</span> worth of it. The correct way to state the shift is: <strong>prices are up 38.8% since 2016.</strong></p>
+<table class="receipts">
+<caption>Cost-of-Living Receipts</caption>
+<thead>
+<tr><th>Item</th><th class="num">Then</th><th class="num">Now</th><th class="num">Change</th></tr>
+</thead>
+<tbody>
+<tr><td>Family health premium <span style="color:var(--dim);font-size:11px;">(KFF)</span></td><td class="num">$18,142 <span style="color:var(--dim);font-weight:400;font-size:10px;">'16</span></td><td class="num">$26,993 <span style="color:var(--dim);font-weight:400;font-size:10px;">'25</span></td><td class="num"><span class="delta">+49%</span></td></tr>
+<tr><td>Worker's payroll share of that premium</td><td class="num">$5,277</td><td class="num">$6,850</td><td class="num"><span class="delta">+30%</span></td></tr>
+<tr><td>Average new-car payment <span style="color:var(--dim);font-size:11px;">(Experian Q1 2026)</span></td><td class="num">—</td><td class="num">$770 / mo</td><td class="num"><span class="delta">record</span></td></tr>
+<tr><td>Auto insurance, full coverage <span style="color:var(--dim);font-size:11px;">(since Sept 2020)</span></td><td class="num">—</td><td class="num">~$2,144 / yr</td><td class="num"><span class="delta">+64%</span></td></tr>
+<tr><td>Homeowners insurance <span style="color:var(--dim);font-size:11px;">(2021 → 2024, CFA)</span></td><td class="num">—</td><td class="num">$3,303</td><td class="num"><span class="delta">+24%</span></td></tr>
+</tbody>
+</table>
+<div class="ticker" aria-label="June 2026 grocery and fuel prices">
+<div><span class="item">Gasoline</span><span class="price">$4.20 / gal</span></div>
+<div><span class="item">Ground beef</span><span class="price">$6.83 / lb</span></div>
+<div><span class="item">Milk</span><span class="price">$4.32 / gal</span></div>
+<div><span class="item">Coffee</span><span class="price">$9.46 / lb</span></div>
+</div>
+<div class="source-line" style="margin-top:6px;">June 2026 prices · U.S. Bureau of Labor Statistics</div>
+</div>
+</section>
+<section class="rec">
+<div class="rec-head">
+<span class="rec-num">§ 03 &nbsp;·&nbsp; The Cart on Your Route</span>
+<h2>Ten Years of Prices on Your Own Shelves</h2>
+</div>
+<div class="rec-body">
+<div class="source-line">Source · U.S. Bureau of Labor Statistics · Average Retail Prices (March 2016 → March 2026)</div>
+<p class="lede">These are the items you stock at every stop. The tickets on your own shelves prove the same point the CPI does — priced in the everyday goods you handle for a living.</p>
+<div class="cart-grid">
+<div class="cart-card">
+<div class="cart-item">Ground coffee</div>
+<div class="cart-unit">1 lb</div>
+<div class="cart-row"><span class="then">$4.41 <span style="font-size:10px;">'16</span></span><span class="arrow">→</span><span class="now">$9.61</span></div>
+<div class="cart-delta">+117.9%</div>
+</div>
+<div class="cart-card">
+<div class="cart-item">Cigarettes</div>
+<div class="cart-unit">1 pack, U.S. weighted avg</div>
+<div class="cart-row"><span class="then">$5.96 <span style="font-size:10px;">'16</span></span><span class="arrow">→</span><span class="now">$10.15</span></div>
+<div class="cart-delta">+70%</div>
+</div>
+<div class="cart-card">
+<div class="cart-item">Ground beef</div>
+<div class="cart-unit">1 lb</div>
+<div class="cart-row"><span class="then">$3.96 <span style="font-size:10px;">'16</span></span><span class="arrow">→</span><span class="now">$6.70</span></div>
+<div class="cart-delta">+69.2%</div>
+</div>
+<div class="cart-card">
+<div class="cart-item">Potato chips</div>
+<div class="cart-unit">16 oz bag</div>
+<div class="cart-row"><span class="then">$4.27 <span style="font-size:10px;">'15</span></span><span class="arrow">→</span><span class="now">$6.56</span></div>
+<div class="cart-delta">+54%</div>
+</div>
+<div class="cart-card">
+<div class="cart-item">Soft drink</div>
+<div class="cart-unit">2-liter, all brands</div>
+<div class="cart-row"><span class="then">$1.44 <span style="font-size:10px;">'18</span></span><span class="arrow">→</span><span class="now">$2.20</span></div>
+<div class="cart-delta">+52% <span style="color:var(--dim);font-weight:400;font-size:11px;">(8 yr)</span></div>
+</div>
+<div class="cart-card">
+<div class="cart-item">Long-grain rice</div>
+<div class="cart-unit">1 lb</div>
+<div class="cart-row"><span class="then">$0.71 <span style="font-size:10px;">'16</span></span><span class="arrow">→</span><span class="now">$1.06</span></div>
+<div class="cart-delta">+49.3%</div>
+</div>
+<div class="cart-card">
+<div class="cart-item">Whole milk</div>
+<div class="cart-unit">1 gallon</div>
+<div class="cart-row"><span class="then">$3.19 <span style="font-size:10px;">'16</span></span><span class="arrow">→</span><span class="now">$4.07</span></div>
+<div class="cart-delta">+27.6%</div>
+</div>
+<div class="cart-card">
+<div class="cart-item">White bread</div>
+<div class="cart-unit">1-lb loaf</div>
+<div class="cart-row"><span class="then">$1.42 <span style="font-size:10px;">'16</span></span><span class="arrow">→</span><span class="now">$1.81</span></div>
+<div class="cart-delta">+27.5%</div>
+</div>
+</div>
+<div class="callout" style="margin-top:14px;">A standardized 10-item BLS grocery basket went from about <span class="fig">$25</span> in 2016 to over <span class="fig">$37</span> in 2026 — a <span class="fig">+45%</span> jump on staples alone.</div>
+<p style="font-size:13px;color:var(--dim);margin-top:10px;">The customers you serve every day are paying these tickets. Every price sticker on your handheld tells the same story the CPI tells at the macro level. A wage set to 2016 stickers should not still be a 2026 wage.</p>
+</div>
+</section>
+<section class="rec">
+<div class="rec-head">
+<span class="rec-num">§ 04 &nbsp;·&nbsp; Retention vs. Replacement</span>
+<h2>The Math for the Employer</h2>
+</div>
+<div class="rec-body">
+<div class="source-line">Source · Gallup · SHRM</div>
+<p class="lede">Industry research on turnover cost puts the true expense of replacing a worker at <strong>50% to 200% of that worker's annual salary.</strong> Even at the conservative floor, the arithmetic tilts hard toward retention.</p>
+<div class="math-block">
+<div class="math-row"><span class="k">Current salary</span><span class="v">$55,000</span></div>
+<div class="math-row"><span class="k">Conservative replacement cost (50% of salary)</span><span class="v fig-stamp">$27,500</span></div>
+<div class="math-row"><span class="k">SHRM average hard recruiting cost per hire</span><span class="v">~$4,700</span></div>
+<div class="math-row total"><span class="k">Proposed raise (one-time and recurring)</span><span class="v">$10,000 / yr</span></div>
+</div>
+<div class="callout">Replacement cost is <span class="fig">$27,500</span> against a <span class="fig">$10,000</span> raise — <strong>nearly three times more expensive</strong> to lose the role than to retain it.</div>
+<p style="font-size:13px;color:var(--dim);margin-top:12px;">And that's before route-relationship cost — the goodwill a route sales rep builds at each stop is not a line item on a spreadsheet, but every convenience-store operator knows a bad handoff loses shelf placement and repeat orders.</p>
+</div>
+</section>
+<section class="rec">
+<div class="rec-head">
+<span class="rec-num">§ 05 &nbsp;·&nbsp; If They Say That, You Say This</span>
+<h2>Rehearsed Responses to Standard Pushback</h2>
+</div>
+<div class="rec-body">
+<p class="lede">Five objections to expect, and the calm, data-anchored response for each. Read them once before the meeting; do not read them from the page during it.</p>
+<div class="obj">
+<div class="obj-say">If they say</div>
+<div class="obj-quote">"We can't afford it right now — times are tight for the industry."</div>
+<div class="obj-reply">You say</div>
+<div class="obj-body">The industry set a record in 2025 — convenience-store in-store sales hit <span class="fig">$341.2B</span> and total industry sales reached <span class="fig">$817.5B</span>, per NACS. As fuel margins compress, the merchandise side — the side route sales reps drive — is what's growing. A $10,000 adjustment inside a healthy revenue category is not the ask that breaks a budget.</div>
+</div>
+<div class="obj">
+<div class="obj-say">If they say</div>
+<div class="obj-quote">"You knew the pay when you took the job."</div>
+<div class="obj-reply">You say</div>
+<div class="obj-body">A wage set to a 2016 price level shouldn't be permanent when the price level is up 38.8%. The company doesn't ask its suppliers to hold 2016 wholesale — and its suppliers don't. The wage band is a market-rate obligation, not a lifetime contract signed once.</div>
+</div>
+<div class="obj">
+<div class="obj-say">If they say</div>
+<div class="obj-quote">"We give a 3% cost-of-living raise every year — that keeps up with inflation."</div>
+<div class="obj-reply">You say</div>
+<div class="obj-body">3% compounded over 10 years lands near <span class="fig">+34%</span> — assuming no missed years. CPI is <span class="fig">+38.8%</span>. Even the ideal 3% path falls behind the price level. And the ask isn't just to catch up on inflation — it's to align with the published market median for the title.</div>
+</div>
+<div class="obj">
+<div class="obj-say">If they say</div>
+<div class="obj-quote">"Anyone would take this job for what we're paying — we can replace you."</div>
+<div class="obj-reply">You say</div>
+<div class="obj-body">Replacement isn't free. Even at the conservative floor, industry turnover cost is <span class="fig">$27,500</span> for this salary — <strong>nearly three times</strong> the raise being asked for. And that assumes the replacement stays, which turnover data on below-market pay suggests is unlikely. The math favors retention.</div>
+</div>
+<div class="obj">
+<div class="obj-say">If they say</div>
+<div class="obj-quote">"We already pay competitively for the role."</div>
+<div class="obj-reply">You say</div>
+<div class="obj-body">Salary.com's 2026 data for "Route Sales Representative" puts the median at <span class="fig">$58,471</span> and the range at <span class="fig">$42,515–$76,261</span>. Current pay sits below the median; the ask lands mid-band. If the company has a different comp study that says otherwise, share it — the conversation can happen off that shared data.</div>
+</div>
+</div>
+</section>
+<section class="rec">
+<div class="rec-head">
+<span class="rec-num">§ 06 &nbsp;·&nbsp; Talking Points</span>
+<h2>What to Actually Say in the Room</h2>
+</div>
+<div class="rec-body">
+<div class="pitch">
+<strong class="label">60-Second Opener</strong>
+<em>"I've been giving my compensation some thought and I wanted to bring you a market-rate correction, not a personal request. The published median for 'Route Sales Representative' is $58,471; the range tops out around $76,000. I'm currently at $55,000, so I'm below the median for the exact title I hold. An adjustment to $65,000 puts me squarely mid-band. Given prices are up 38.8% since 2016 and turnover cost is roughly three times the raise, I think it's the right conversation to have."</em>
+</div>
+<ol class="tp">
+<li><strong>Lead with the market-rate gap, using the correct job title.</strong> Salary.com puts the median for "Route Sales Representative" at $58,471. Ask lands mid-band, not above it. If the SOC 53-3031 number comes up, correct it politely — that code includes pizza delivery.</li>
+<li><strong>Frame the economy as context for a stale wage band</strong> — never as personal need. Prices are up 38.8% since 2016. The wage band was set to a different price level.</li>
+<li><strong>Point to the shelves.</strong> Coffee is up 118%. Ground beef up 69%. Cigarettes up 70%. Chips up 54%. Every price sticker on the route makes the same case the CPI does.</li>
+<li><strong>Close on retention math.</strong> A $10,000 raise is roughly one-third of what turnover costs the employer at the conservative floor. The raise is the cheaper option.</li>
+<li><strong>Ask for a written response inside two weeks.</strong> If the answer is no, ask what specific market data the "no" is based on — and offer to circle back in 90 days with any additional evidence they'd like to see.</li>
+</ol>
+<div class="donot">
+<strong>Do Not Say</strong>
+Do not frame the ask around needing money, household expenses, family obligations, or any personal circumstance. Do not compare pay to specific coworkers. Do not threaten to quit — retention math makes the point without a threat. The entire case rests on published market data and economy-wide numbers. Anything personal weakens it.
+</div>
+</div>
+</section>
+<footer class="sources">
+<span class="lbl">Sources</span>
+U.S. Bureau of Labor Statistics — CPI-U and Average Retail Prices series (via FRED) · Salary.com — Route Sales Representative, 2026 · KFF Employer Health Benefits Survey · Experian State of the Automotive Finance Market, Q1 2026 · Insurify · Consumer Federation of America · SHRM · Gallup · NACS State of the Industry Report, 2025 · Campaign for Tobacco-Free Kids state pricing tables
+</footer>
+<footer class="stamp-line">
+<span>Doc 8x4t2m · v2</span>
+<span>Compensation Review · Route Sales Representative</span>
+</div>
+</section>
+<footer class="sources">
+<span class="lbl">Sources</span>
+U.S. Bureau of Labor Statistics — CPI-U and Average Retail Prices series (via FRED) · Salary.com — Route Sales Representative, 2026 · KFF Employer Health Benefits Survey · Experian State of the Automotive Finance Market, Q1 2026 · Insurify · Consumer Federation of America · state pricing tables
+</footer>
+</div>
+</body>
+</html>
